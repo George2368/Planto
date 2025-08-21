@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Inter Black';
+  src: url(/src/fonts/static/Inter_28pt-Black.ttf);
+}
+body {
+  margin: 0;
+font-family: 'Inter';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(27, 35, 22, 1);
+  padding: 0px;
+  color: #FFFFFF;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  opacity: 0.75;
+  font-size: 1.5em;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+

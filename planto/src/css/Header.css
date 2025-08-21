@@ -1,0 +1,44 @@
+.planto-header{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 3.5625em;
+    padding-top: 3.5625em;
+    padding-right: 3.5em;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+.logo-container{
+    display: flex;
+    align-items: flex-end;
+}
+.logo-name{
+    font-family: 'Inter Black';
+    font-size: 1.75em;
+    opacity: 0.75;
+    margin-left: 14px;
+}
+.logo{
+    width: 3.5625em;
+    height: 3.5625em;
+    object-fit: contain;
+}
+.planto-header-navigaton{
+    display: flex;
+    align-items: center;
+    width: 34.0625em;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.planto-header-manipulationbuttons{
+    width: 12.5625em;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.planto-header-navigaton button{
+    padding-top: 0.8em;
+}
+.planto-header-manipulationbuttons button{
+    padding-top: 0.8em;
+}
