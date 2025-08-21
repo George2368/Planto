@@ -13,7 +13,9 @@ class Manipulation extends React.Component{
             </div>
         )
     }
-
+    navActions(){
+        
+    }
 }
 
 export default Manipulation;
