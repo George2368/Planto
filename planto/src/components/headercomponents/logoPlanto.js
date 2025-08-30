@@ -6,7 +6,7 @@ function Logotype(props) {
 return(
     <div className="logo-container">
         <Image classObject='logo' imagePath={logo} />
-        <span className='logo-name'>{props.logoname}</span>
+        <span className='logo-name' translate="no">{props.logoname}</span>
     </div>
 )
 }

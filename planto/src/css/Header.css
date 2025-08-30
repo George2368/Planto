@@ -1,12 +1,21 @@
 .planto-header{
-    width: 100%;
-    box-sizing: border-box;
-    padding-left: 3.5625em;
-    padding-top: 3.5625em;
-    padding-right: 3.5em;
+    width: 96%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    margin-top: 1.725em;
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 3;
+    height: 5em;
+    padding-left: 0.8125em;
+    padding-right: 0.8125em;
+    padding-bottom: 1.0625em;
+    padding-top: 0.9375em;
+    box-sizing: border-box;
+}
+.planto-header button{
+     font-family: "Inter Medium";
 }
 .logo-container{
     display: flex;
@@ -17,11 +26,13 @@
     font-size: 1.75em;
     opacity: 0.75;
     margin-left: 14px;
+    
 }
 .logo{
-    width: 3.5625em;
-    height: 3.5625em;
-    object-fit: contain;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    filter: drop-shadow();
 }
 .planto-header-navigaton{
     display: flex;
@@ -37,8 +48,14 @@
     align-items: center;
 }
 .planto-header-navigaton button{
-    padding-top: 0.8em;
+    padding-top: 0.4em;
 }
 .planto-header-manipulationbuttons button{
-    padding-top: 0.8em;
+    padding-top: 0.4em;
+}
+.planto-scrolled-header-background{
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    filter: drop-shadow(0px 18px 22px -6px rgba(0, 0, 0, 0.25));
 }

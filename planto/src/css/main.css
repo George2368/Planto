@@ -1,0 +1,294 @@
+.planto-body{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.planto-body-hero{
+    background-image: url(/src/assets/backgroungimage.png);
+    padding-top: 17%;
+    width: auto;
+    background-size: cover;
+    background-position: center center;
+    height: 150vw;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1.0076fr 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr 0.5fr 0.59734fr 4fr;
+    grid-template-areas: 'breath breath trendyS trendyS' '. . trendyS trendyS' 'reviews . trendyS trendyS' 'trendyB trendyB trendyB trendyB';
+    padding-left: 3.5625em;
+    padding-right: 2.8125em;
+}
+.planto-body-hero-title{
+    grid-area: breath;
+}
+.planto-body-hero-title p{
+    font-family: "Inter Medium";
+     opacity: 0.75;
+     font-size: 1.4375em;
+     margin-top: 0px;
+     margin-bottom: 1.25em;
+     margin-left: 6px;
+}
+.planto-body-hero-title h1{
+     font-family: 'Inter SiemBold';
+     opacity: 0.75;
+    font-size: 7.375em;
+    margin: 0px;
+}
+
+.planto-body-hero-trendyB{
+    grid-area: trendyB;
+    width: 100%;
+}
+.planto-body-hero-trendyS{
+    grid-area: trendyS;
+    height:80.5%;
+    position: relative;
+    width: 77.8%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    display: flex;
+    justify-content: flex-end;
+    backdrop-filter: blur(8px);
+    border-radius: 80px;
+    justify-self: end;
+}
+.planto-alt-border{
+    position: absolute;
+    width: 100.5%;
+    filter:  drop-shadow(10px 90px 18.4px rgba(0, 0, 0, 0.818));
+}
+.explore-button{
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    width: 7.75em;
+    font-size: 1.75em;
+    box-sizing: border-box;
+    height: 2.2857142857142em;
+}
+.planto-body-hero-buttons-container{
+    display: flex;
+    column-gap: 2.1875em;
+}
+.paly-button{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.paly-button span{
+   margin-left: 1rem;
+}
+.planto-reviews-profile-img{
+    width: 4em;
+    height: 4em;
+}
+.planto-body-hero-reviews{
+    grid-area: reviews;
+    width: 85%;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Inter Regular';
+}
+.planto-body-glass-container{
+background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 45px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    position: relative;
+}
+.planto-body-border{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: -3px;
+    z-index: -1;
+    
+}
+.planto-review{
+    font-size: 1.0625em;
+    padding-top: 1em;
+}
+.planto-reviews-profile{
+    display: flex;
+    align-items: center;
+    column-gap: 1.75em;
+}
+.planto-reviews-profile-info-name{
+    font-size: 1.375em;
+    margin-bottom: 5px;
+}
+
+.planto-hero-trendyS-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height:90%;
+    width:100%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.planto-body-hero-trendyS .planto-body-border{
+    left: 0;
+}
+.planto-hero-trendyS-container-info{
+    font-family: "Inter Regular";
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.planto-hero-trendyS-container-info *{
+    opacity: 0.75;
+    margin: 0;
+}
+.planto-hero-trendyS-container-info-name{
+    font-size: 2.375em;
+
+}
+.planto-hero-trendyS-container-info-title{
+    font-size: 1.4375em;
+}
+.planto-trendyS-plant-img{
+    position: absolute;
+    top: -19%;
+    width:80%;
+}
+.planto-body-border-alt{
+    backdrop-filter: blur(8px);
+    border-radius: 45px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+}
+.planto-trendyS-now-indicator{
+    display: flex;
+    justify-content: space-between;
+    width: 3.5625em;
+}
+
+.planto-trendyS-now-indicator-dot {
+    width: 0.375em;
+    height: 0.375em;
+    background-color: #ffffff;
+    border-radius: 50em;    
+}
+.planto-trendyS-now-indicator-dot-active{
+        width: 1.3125em;
+        border-radius: 30em;    
+}
+.planto-hero-trendyS-container-cover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 39%;
+    width: 85%;
+    padding-left: 3em;
+    box-sizing: border-box;
+    margin-bottom: 1.8em;
+}
+.disactive{
+    display: none;
+}
+.planto-body-hero-trendyB{
+    justify-content: center;
+}
+.planto-body-hero-trendyB_h2{
+    display: flex;
+    justify-content: center;
+}
+.planto-body-hero-trendyB{
+    justify-self: center;
+}
+.planto-body-hero-trendyB_h2 h2{
+    position: relative;
+    filter: drop-shadow();
+    width: fit-content;
+}
+.planto-body-hero-trendyB_h2 h2::after{
+    content: url(/src/assets/Vector\ 1.svg);
+    position: absolute;
+    width: 69px;
+    height: 69px;
+    top: -20px;
+    right: -26px;
+}
+.planto-body-hero-trendyB_h2 h2::before{
+    content: url(/src/assets/Vector\ 1.svg);
+    position: absolute;
+    width: 69px;
+    transform: rotate(180deg);
+    height: 69px;
+    top: 20px;
+    left: -30px;
+}
+.planto-body-hero-trendyB-container{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border-radius: 151px;
+    height: 32.875em;
+    font-family: "Inter SiemBold";
+    margin-top: 8.125em;
+}
+.planto-body-hero-trendyB-container h3{
+    font-family: "Inter SiemBold";
+}
+.planto-body-hero-trendyB-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    padding-right: 2.0625em;
+    width: 50%;
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.planto-body-hero-trendyB-info p{
+    font-size: 1.25em;
+}
+.planto-price-container{
+    font-size: 2.375em;
+}
+.planto-buy-button{
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    height: 2.666665em;
+    width: 2.666665em;
+    box-sizing: border-box;
+    margin-left: 1.45em;
+}
+.planto-body-hero-trendyB-buttons-container{
+    display: flex;
+}
+.planto-plant-img{
+    position: absolute;
+    left: 29px;
+    bottom: -1%;
+}
+.planto-body-hero-trendyB-container:nth-child(3){
+    justify-content: flex-start;
+}
+.planto-body-hero-trendyB-container:nth-child(3) .planto-plant-img{
+    bottom: -13%;
+    left: auto;
+    right: -2%;
+}
+.planto-body-hero-trendyB-container:nth-child(3) .planto-body-hero-trendyB-info{
+    padding-left: 7.625em;
+}
