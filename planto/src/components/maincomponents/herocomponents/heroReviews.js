@@ -9,7 +9,7 @@ class HeroReviews extends React.Component{
                 <div className="planto-body-hero-reviews planto-body-glass-container">
                  <Border svgwidth="99%" svgheight="95%" elementRadius="45"/>
                     <div className="planto-reviews-profile">
-                        <Image classObject="planto-reviews-profile-img" imagePath={Alena_Patel}/>
+                        <Image classObject="planto-reviews-profile-img planto-profile-shadow" imagePath={Alena_Patel}/>
                         <div className="planto-reviews-profile-info">
                             <span className="planto-reviews-profile-info-name">Alena Patel</span>
                             <div className="planto-reviews-profile-info-stars"><Image imagePath={stars}/></div>

@@ -9,7 +9,7 @@ class TrendyS extends React.Component{
                 <div className="planto-body-hero-trendyS">
                    <AltBorder/>
                    <div className="planto-hero-trendyS-container">
-                        <Image classObject="planto-trendyS-plant-img" imagePath={this.props.plantImage}/>
+                        <Image classObject="planto-trendyS-plant-img planto-images-shadow" imagePath={this.props.plantImage}/>
                         <div className="planto-hero-trendyS-container-cover">
                         <button className="planto-hero-trendyS-last planto-hero-trendyS-rl disactive"><img src={Arrow}/></button>
                             <div className="planto-hero-trendyS-container-info">    

@@ -3,16 +3,17 @@ import Logotype from "./headercomponents/logoPlanto";
 import HeaderNav from "./headercomponents/navigation";
 import Manipulation from "./headercomponents/manipulation";
 import '../css/Header.css'
+import Border from './maincomponents/boder';
 
 class Header extends React.Component{
            constructor(props) {
           super(props);
           this.headerBackground = React.createRef();
-    
         }
     render(){
         return(
-            <header ref={this.headerBackground} className="planto-header">
+            <header ref={this.headerBackground} className="planto-header planto-header-noScroll">
+                <Border svgwidth="99%" svgheight="94.5%" elementRadius="20"/>
                 <Logotype logoname="Planto." />
                 <HeaderNav />
                 <Manipulation />
@@ -29,10 +30,12 @@ class Header extends React.Component{
     headercover(headerEl){
     const scrollThreshold = 50; // Высота скролла в пикселях, при достижении которой изменится фон
     if (window.scrollY > scrollThreshold) {
+         headerEl.classList.remove('planto-header-noScroll');
         headerEl.classList.add('planto-scrolled-header-background');
     } 
     else {
         headerEl.classList.remove('planto-scrolled-header-background');
+        headerEl.classList.add('planto-header-noScroll');
     }
 
     }

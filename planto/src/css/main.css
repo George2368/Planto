@@ -5,15 +5,14 @@
 }
 .planto-body-hero{
     background-image: url(/src/assets/backgroungimage.png);
-    padding-top: 17%;
+    padding-top: 16.625em;
     width: auto;
     background-size: cover;
     background-position: center center;
-    height: 150vw;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1.0076fr 1fr 0.5fr 1fr;
-    grid-template-rows: 1fr 0.5fr 0.59734fr 4fr;
+    grid-template-rows: 1fr 0.25fr 0.59734fr 4fr;
     grid-template-areas: 'breath breath trendyS trendyS' '. . trendyS trendyS' 'reviews . trendyS trendyS' 'trendyB trendyB trendyB trendyB';
     padding-left: 3.5625em;
     padding-right: 2.8125em;
@@ -42,7 +41,7 @@
 }
 .planto-body-hero-trendyS{
     grid-area: trendyS;
-    height:80.5%;
+    height:83.8%;
     position: relative;
     width: 77.8%;
     background-size: contain;
@@ -53,11 +52,12 @@
     backdrop-filter: blur(8px);
     border-radius: 80px;
     justify-self: end;
+    filter:  drop-shadow(0px 9px 18.4px rgba(0, 0, 0, 0.25));
 }
 .planto-alt-border{
     position: absolute;
     width: 100.5%;
-    filter:  drop-shadow(10px 90px 18.4px rgba(0, 0, 0, 0.818));
+     filter:  drop-shadow(0px 9px 18.4px rgba(0, 0, 0, 0.25));
 }
 .explore-button{
     border: 2px solid #ffffff;
@@ -75,6 +75,11 @@
 display: flex;
 justify-content: center;
 align-items: center;
+height: 2.666665em;
+}
+.playIcon{
+    object-fit: contain;
+    height: 100%;
 }
 .paly-button span{
    margin-left: 1rem;
@@ -110,7 +115,7 @@ background-color: rgba(255, 255, 255, 0.05);
     top: 0;
     left: -3px;
     z-index: -1;
-    
+    transition: visibility 0.15s ease;
 }
 .planto-review{
     font-size: 1.0625em;
@@ -130,7 +135,7 @@ background-color: rgba(255, 255, 255, 0.05);
     position: relative;
     display: flex;
     align-items: center;
-    height:90%;
+    height:95%;
     width:100%;
     flex-direction: column;
     justify-content: flex-end;
@@ -213,7 +218,7 @@ background-color: rgba(255, 255, 255, 0.05);
 }
 .planto-body-hero-trendyB_h2 h2{
     position: relative;
-    filter: drop-shadow();
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.36)) drop-shadow(0px 50.05px 40.04px rgba(0, 0, 0, 0.2737)) drop-shadow(0px 30.15px 24.12px rgba(0, 0, 0, 0.2346)) drop-shadow(0px 19.32px 15.46px rgba(0, 0, 0, 0.2055)) drop-shadow(0px 12.52px 10.02px rgba(0, 0, 0, 0.18)) drop-shadow(0px 7.88px 6.31px rgba(0, 0, 0, 0.1545)) drop-shadow(0px 4.53px 3.62px rgba(0, 0, 0, 0.1254)) drop-shadow(0px 1.99px 1.99px rgba(0, 0, 0, 0.0863));
     width: fit-content;
 }
 .planto-body-hero-trendyB_h2 h2::after{
@@ -252,12 +257,12 @@ background-color: rgba(255, 255, 255, 0.05);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 50%;
     padding-right: 2.0625em;
     width: 50%;
     box-sizing: border-box;
     margin-top: auto;
     margin-bottom: auto;
+    row-gap: 1.5em;
 }
 .planto-body-hero-trendyB-info p{
     font-size: 1.25em;
@@ -291,4 +296,166 @@ background-color: rgba(255, 255, 255, 0.05);
 }
 .planto-body-hero-trendyB-container:nth-child(3) .planto-body-hero-trendyB-info{
     padding-left: 7.625em;
+}
+.planto-images-shadow{
+    filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.12)) drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.0912)) drop-shadow(0px 8.14px 14.12px rgba(0, 0, 0, 0.0782)) drop-shadow(0px 5.22px 5.46px rgba(0, 0, 0, 0.0685)) drop-shadow(0px 3.38px 10.02px rgba(0, 0, 0, 0.06)) drop-shadow(0px 2.13px 6.31px rgba(0, 0, 0, 0.0515)) drop-shadow(0px 1.22px 3.62px rgba(0, 0, 0, 0.0418)) drop-shadow(0px 0.54px 1.59px rgba(0, 0, 0, 0.0288));
+}
+.planto-body-main-content-container{
+    padding-left: 3.8125em;
+    padding-right: 2.8125em;
+}
+.planto-body-topSell{
+    margin-top: 8.9375em;
+}
+.planto-body-topSell-cards-cotainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.5625em;
+    grid-template-rows: auto;
+    row-gap: 7.0625em;
+    margin-top: 11.8125em;
+}
+.planto-body-topSell-card{
+    position: relative;
+    display: flex;
+    height: 40.25em;
+}
+.planto-body-topSell-card-background{
+    position: absolute;
+    filter: drop-shadow(0px 9px 18.4px rgba(0, 0, 0, 0.25));
+    z-index: -1;
+    width: 100%;
+}
+.planto-body-topSell-card-image{
+    top: -18%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+.planto-card-content-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.25em;
+        padding-left: 4.125em;
+    padding-bottom: 3.1875em;
+    padding-right: 4.625em;
+    justify-content: flex-end;
+    font-family: "Inter Regular";
+}
+.planto-card-content-container > *:not(:last-child), .planto-price-container{
+    opacity: 0.75;
+}
+.planto-card-manipulation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.planto-card-desc{
+    font-size: 1.5em;
+}
+.planto-card-name, .planto-hero-trendyS-container-info-name{
+    letter-spacing: 1.5px;
+    font-weight: 300;
+}
+.planto-hero-trendyS-rl{
+    opacity: 1;
+}
+.planto-card-content-container .planto-buy-button{
+    width: 2.291666666666667em;
+    height: 2.291666666666667em;
+}
+.planto-body-review{
+    position: relative;
+    padding-left: 3.625em;
+    padding-bottom: 5.9375em;
+    padding-top: 5.6875em;
+    padding-right: 3.375em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.planto-body-rew-cards-cotainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    height: 480px;
+    column-gap: 2.0625em;
+    margin-top: 11.375em;
+}
+.planto-rev-profile-info-container{
+    display: flex;
+    column-gap: 2.375em;
+}
+.planto-rev-profile-info{
+    display: flex;
+    flex-direction: column;
+}
+.planto-rew-background{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.planto-rev-profile-name{
+    font-size: 2.375em;
+    font-family: "Inter Siembold";
+}
+.planto-review-text{
+    font-size: 1.5em;
+    font-family: "Inter Regular";
+    opacity: 0.75;
+}
+.planto-profile-shadow{
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.15)) drop-shadow(0px 41.78px 33.42px rgba(0, 0, 0, 0.1078)) drop-shadow(0px 22.34px 17.87px rgba(0, 0, 0, 0.0894)) drop-shadow(0px 12.52px 10.02px rgba(0, 0, 0, 0.075))  drop-shadow(0px 6.65px 5.32px rgba(0, 0, 0, 0.0606)) drop-shadow(0px 2.77px 2.21px rgba(0, 0, 0, 0.0422));
+}
+.planto-body-best-cotainer{
+    position: relative;
+    width: 100%;
+    height: 755px;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    border-radius: 92px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.planto-body-best-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: "Inter Siembold";
+    padding-right: 5.6875em;
+    height: 80%;
+    width: 45%;
+}
+.planto-body-best-content-container> *:not(:last-child){
+    opacity: 0.75;
+}
+.planto-body-best-img{
+    position: absolute;
+    left: -94px;
+    top: -137px;
+    width: 54%;
+    object-fit: contain;
+}
+.planto-body-best-content-text{
+    font-size: 1.75em;
+}
+.planto-body-best-manipulation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.planto-body-best-manipulation-rl{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 1400px){
+    .planto-body-hero-trendyB-info{
+        width: 56%;
+    }
 }

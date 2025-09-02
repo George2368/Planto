@@ -13,6 +13,14 @@
     padding-bottom: 1.0625em;
     padding-top: 0.9375em;
     box-sizing: border-box;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+.planto-header-noScroll .planto-body-border{
+    visibility: hidden;
+}
+.planto-scrolled-header-background .planto-body-border{
+    visibility:visible;
 }
 .planto-header button{
      font-family: "Inter Medium";
@@ -32,7 +40,7 @@
     width: auto;
     height: 100%;
     object-fit: cover;
-    filter: drop-shadow();
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.17)) drop-shadow(0px 46px 37px rgba(0, 0, 0, 0.1261)) drop-shadow(0px 26px 21px rgba(0, 0, 0, 0.1066)) drop-shadow(0px 16px 13px rgba(0, 0, 0, 0.0918)) drop-shadow(0px 10px 7px rgba(0, 0, 0, 0.0782)) drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.0634)) drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.0439));
 }
 .planto-header-navigaton{
     display: flex;
@@ -56,6 +64,5 @@
 .planto-scrolled-header-background{
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
-    border-radius: 20px;
     filter: drop-shadow(0px 18px 22px -6px rgba(0, 0, 0, 0.25));
 }
