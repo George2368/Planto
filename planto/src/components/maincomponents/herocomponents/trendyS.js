@@ -1,13 +1,33 @@
 import React from "react";
-import Border from "../boder";
 import Image from "../../images";
 import Arrow from "../../../assets/right-arrow 1.svg";
 import AltBorder from "../altborder";
+import ActiveDot from "../dot";
+import borderImgAlt from "../../../assets/Rectangle 2.svg";
+import borderImgAltSecond from "../../../assets/Rectangle 2alt.svg";
+
 class TrendyS extends React.Component{
+       constructor(props) {
+    super(props);
+    this.state = {borderImg: borderImgAlt};
+    this.switchBorderImg = this.switchBorderImg.bind(this);
+  }
+  componentDidMount(){
+    this.switchBorderImg()
+    window.addEventListener("resize", this.switchBorderImg)
+  }
+  switchBorderImg(){
+    if(window.innerWidth < 850){
+            this.setState({borderImg: borderImgAltSecond})
+    }
+    else {
+        this.setState({borderImg: borderImgAlt})
+    }
+  }
      render(){
         return(
                 <div className="planto-body-hero-trendyS">
-                   <AltBorder/>
+                   <AltBorder border={this.state.borderImg}/>
                    <div className="planto-hero-trendyS-container">
                         <Image classObject="planto-trendyS-plant-img planto-images-shadow" imagePath={this.props.plantImage}/>
                         <div className="planto-hero-trendyS-container-cover">
@@ -19,11 +39,7 @@ class TrendyS extends React.Component{
                             </div>
                         <button className="planto-hero-trendyS-next planto-hero-trendyS-rl"><img src={Arrow}/></button>
                         </div>
-                        <div className="planto-trendyS-now-indicator">
-                            <div className="planto-trendyS-now-indicator-dot planto-trendyS-now-indicator-dot-active"></div>
-                            <div className="planto-trendyS-now-indicator-dot"></div>
-                            <div className="planto-trendyS-now-indicator-dot"></div>
-                        </div>
+                        <ActiveDot/>
                     </div>
                 </div>
         )

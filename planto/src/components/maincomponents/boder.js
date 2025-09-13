@@ -17,7 +17,7 @@ class Border extends React.Component{
                     <rect x="2" y="2" width={this.props.svgwidth} height={this.props.svgheight} rx={this.props.elementRadius}
                         fill="none" 
                         stroke="url(#radialStroke)" 
-                        strokeWidth="2"/>
+                        strokeWidth={this.props.ws}/>
                     </svg>
                     </div>
         )

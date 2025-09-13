@@ -8,21 +8,27 @@ import Border from './maincomponents/boder';
 class Header extends React.Component{
            constructor(props) {
           super(props);
-          this.headerBackground = React.createRef();
+            this.state = {
+            headerBackground: null
+        };
+          this.setHeaderRef = (element) => {
+            this.setState({ headerBackground: element });
+        };
         }
     render(){
         return(
-            <header ref={this.headerBackground} className="planto-header planto-header-noScroll">
-                <Border svgwidth="99%" svgheight="94.5%" elementRadius="20"/>
+            <header ref={this.setHeaderRef} className="planto-header planto-header-noScroll">
+                <Border svgwidth="99%" svgheight="94.5%" elementRadius="20" ws={2}/>
                 <Logotype logoname="Planto." />
-                <HeaderNav />
-                <Manipulation />
+                <HeaderNav scrollHome={this.state.headerBackground}/>
+                <Manipulation onClickFunc={this.props.onClickModalFunc}/>
             </header>
         )
     }
      componentDidMount(){
+        
          window.addEventListener('scroll', ()=>{
-            this.headercover(this.headerBackground.current)
+            this.headercover(this.state.headerBackground)
          });
     }
 

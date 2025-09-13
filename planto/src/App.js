@@ -2,6 +2,9 @@ import React from 'react';
 import './css/App.css';
 import Header from './components/header.js';
 import Main from './components/main.js';
+import Footer from './components/footer.js';
+import Modal from './components/modal.js';
+import HeaderNav from './components/headercomponents/navigation.js';
 class App extends React.Component{
   constructor(props){
     super(props)
@@ -55,14 +58,14 @@ class App extends React.Component{
       reviews:[
         {
           id: "r1",
-          name: "Alena Patel",
+          name: "Alena Pa",
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
           stars: 4.5,
           profile: "alena.png"
         },
         {
           id: "r2",
-          name: "Maxn Raval",
+          name: "Max Raval",
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
           stars: 4,
           profile: "maxn.png"
@@ -82,16 +85,51 @@ class App extends React.Component{
           profile: "lii.png"
         }
 
-      ]
+      ],
+      isModalOpen: false,
+      isSecondModalOpen: false
     }
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.openSecondModal = this.openSecondModal.bind(this);
+    this.closeSecondModal = this.closeSecondModal.bind(this);
+  }
+  openModal() {
+    this.setState({ isModalOpen: true });
   }
 
+  closeModal() {
+    this.setState({ isModalOpen: false });
+  }
+
+  openSecondModal() {
+    this.setState({ isSecondModalOpen: true });
+  }
+
+  closeSecondModal() {
+    this.setState({ isSecondModalOpen: false });
+  }
   render(){
       return (
     <div className="App-planto">
-      <Header classType=""/>
-      <Main classType="" itemsCards={this.state.items} reviews={this.state.reviews}/>
-      <footer className="planto-footer"></footer>
+               <Modal 
+          isOpen={this.state.isModalOpen} 
+          onClose={this.closeModal}
+        >
+           <HeaderNav />
+          <div className="modal-actions">
+            <button onClick={this.closeModal} className="modal-action-button">
+              Закрыть
+            </button>
+            {/* <button onClick={this.openSecondModal} className="modal-action-button">
+              Открыть второе окно
+            </button> */}
+          </div>
+        </Modal>
+      <Header classType="" onClickModalFunc={this.openModal}/>
+      <Main classType="" onClickModalFunc={this.openSecondModal} itemsCards={this.state.items} reviews={this.state.reviews}/>
+      <Footer classType="planto-footer"/>
+      
     </div>
   )}
 

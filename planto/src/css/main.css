@@ -88,8 +88,12 @@ height: 2.666665em;
     width: 4em;
     height: 4em;
 }
-.planto-body-hero-reviews{
+.planto-hero-review-cover{
     grid-area: reviews;
+    display: flex;
+    justify-content: space-between;
+}
+.planto-body-hero-reviews{
     width: 85%;
     padding-top: 10%;
     padding-left: 10%;
@@ -165,7 +169,7 @@ background-color: rgba(255, 255, 255, 0.05);
 .planto-trendyS-plant-img{
     position: absolute;
     top: -19%;
-    width:80%;
+    width:75%;
 }
 .planto-body-border-alt{
     backdrop-filter: blur(8px);
@@ -324,6 +328,7 @@ background-color: rgba(255, 255, 255, 0.05);
     position: absolute;
     filter: drop-shadow(0px 9px 18.4px rgba(0, 0, 0, 0.25));
     z-index: -1;
+    height: 100%;
     width: 100%;
 }
 .planto-body-topSell-card-image{
@@ -331,6 +336,8 @@ background-color: rgba(255, 255, 255, 0.05);
     position: absolute;
     left: 50%;
     transform: translate(-50%,0%);
+    width: 28.6875em;
+    height: 28.6875em;
 }
 .planto-card-content-container{
     display: flex;
@@ -380,7 +387,7 @@ background-color: rgba(255, 255, 255, 0.05);
     flex-wrap: nowrap;
     width: 100%;
     box-sizing: border-box;
-    height: 480px;
+    height: 30em;
     column-gap: 2.0625em;
     margin-top: 11.375em;
 }
@@ -391,11 +398,12 @@ background-color: rgba(255, 255, 255, 0.05);
 .planto-rev-profile-info{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .planto-rew-background{
     position: absolute;
     z-index: -1;
-    width: 100%;
+    width: 100%;    
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -415,12 +423,13 @@ background-color: rgba(255, 255, 255, 0.05);
 .planto-body-best-cotainer{
     position: relative;
     width: 100%;
-    height: 755px;
+    height: 48.4375em;
     background-color: rgba(255, 255, 255, 0.05);
     display: flex;
     border-radius: 92px;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 15.125em;
 }
 .planto-body-best-content-container{
     display: flex;
@@ -441,6 +450,7 @@ background-color: rgba(255, 255, 255, 0.05);
     top: -137px;
     width: 54%;
     object-fit: contain;
+    height: 100%;
 }
 .planto-body-best-content-text{
     font-size: 1.75em;
@@ -453,9 +463,457 @@ background-color: rgba(255, 255, 255, 0.05);
 .planto-body-best-manipulation-rl{
     display: flex;
     justify-content: space-between;
+    width: 11.625em;
+    align-items: center;
+}
+.planto-body-best-manipulation-rl-buttons{
+    opacity: 0.35;
+    width: 1.5em;
+    font-family: "Inter Bold";
+}
+.planto-body-best-manipulation-count{
+    font-size: 1.25em;
+    opacity: 0.75;    
+}
+.planto-body-best-manipulation-count span:last-child{
+    font-size: 0.75em;     
+}
+.planto-body-best-manipulation-l{
+    transform: rotate(180deg);
+}
+.planto-body-best-manipulation-active{
+    opacity: 0.75;
+}
+.planto-body-best-component{
+    margin-top: 17.8125em;
+}
+.planto-body-best-component .planto-trendyS-now-indicator{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8.3125em;
+}
+@media (max-width: 1600px) {
+    .planto-card-content-container{
+        row-gap: 1.25em;
+         height: 90%;
+    }
+    .planto-body-topSell-card-image{
+        width: 26.6875em;
+        height: 26.6875em;
+    }
+    
+}
+@media (max-width: 1500px) {
+    .planto-card-content-container{
+        row-gap: 1.25em;
+         height: 86%;
+    }
+    .planto-body-topSell-card-image{
+        width: 25.6875em;
+        height: 25.6875em;
+    }
+    
+}
+@media (max-width: 1445px){
+       .planto-rev-profile-name{
+       font-size: 2em;
+    }
 }
 @media (max-width: 1400px){
     .planto-body-hero-trendyB-info{
         width: 56%;
     }
+      .planto-card-content-container{
+        row-gap: 1.25em;
+         height: 88%;
+    }
+    .planto-body-topSell-card-image{
+        width: 25.6875em;
+        height: 25.6875em;
+    }
+    .planto-body-review{
+             padding-bottom: 4.9375em;
+        padding-top: 4.6875em;
+    }
 }
+@media (max-width: 1360px){
+    .planto-body-hero-trendyB-info{
+        width: 56%;
+    }
+      .planto-card-content-container{
+        row-gap: 1.25em;
+         height: 88%;
+    }
+    .planto-body-topSell-card-image{
+        width: 25.6875em;
+        height: 25.6875em;
+    }
+    .planto-rev-profile-info{
+        justify-content: space-around;
+    }
+}
+@media (max-width: 1250px){
+.planto-body-topSell-cards-cotainer{
+    grid-template-columns: 1fr 1fr;
+}
+.planto-body-topSell-card-background{
+    width: auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.planto-card-content-container{
+    padding-left: 5.125em;
+    padding-right: 5.625em;
+}
+.planto-review-text{
+    font-size: 2.1em
+}
+.planto-rev-profile-name{
+    font-size: 2.685em
+}
+.planto-body-review {
+    padding-bottom: 3.9375em;
+    padding-top: 2.6875em
+}
+.planto-body-best-content-container{
+    height: 75%;
+}
+
+}
+
+@media (max-width: 1140px){
+
+.planto-card-content-container{
+    padding-left: 7.125em;
+    padding-right: 7.625em;
+}
+.planto-review-text{
+    font-size: 2.35em
+}
+.planto-rev-profile-name{
+    font-size: 2.885em
+}
+.planto-body-review {
+    padding-bottom: 0.9375em;
+    padding-top: 2.6875em
+}
+.planto-body-best-content-container{
+    height: 75%;
+}
+.planto-body-best-cotainer {
+    height: 44.4375em;
+
+}
+.planto-body-best-img {
+    top: -94px;
+}
+.planto-hero-trendyS-container-cover{
+    height: 42%;
+}
+.planto-hero-trendyS-container-info-name{
+    font-size: 2em;
+}
+.planto-hero-trendyS-container-info-title{
+    font-size: 1.3375em;
+}
+}
+@media (max-width: 1000px) {
+    .planto-review-text{
+        font-size: 1.8em;
+    }
+    .planto-rev-profile-name{
+        font-size: 2.4em;
+    }
+    .planto-body-review{
+        padding-bottom: 3em;
+    }
+    .planto-card-content-container{
+        padding-left: 5.125em;
+        padding-right: 4.625em;
+    }
+    .planto-body-topSell-card-background{
+        width: 100%;
+    }
+    .planto-body-best-content-text{
+        font-size: 1.5em;
+    }
+    .planto-body-best-component .planto-trendyS-now-indicator{
+        margin-top: 3.3125em;
+    }
+}
+@media (max-width: 950px) {
+    .planto-body-hero-reviews{
+        width: 100%;
+    }
+    .planto-body-hero-trendyS{
+        height: 95.8%;
+        width: 88.8%;
+    }
+    .planto-hero-trendyS-container {
+        height: 90%;
+    }
+}
+@media (max-width: 849px) {
+    .planto-body-hero-trendyB{
+        display: none;
+    }
+    .planto-body-hero{
+        grid-template-columns: 1.0076fr 1fr 0.5fr 1fr;
+        grid-template-rows: 1fr 0.25fr 2fr 1fr;
+        grid-template-areas:
+        'breath breath breath breath'
+        '. . . .'
+        'trendyS trendyS trendyS trendyS'
+        'reviews reviews reviews reviews ';
+        
+    }
+
+    .planto-body-hero-reviews{
+        scroll-snap-align: center; 
+    }
+    .planto-body-hero-trendyS{
+        justify-self: center;
+        height: auto;
+        width: 98.8%;
+    }
+    .planto-trendyS-plant-img {
+        width: 55%;
+        right: -19px;
+    }
+    .planto-hero-trendyS-container {
+        height: 103%;
+        justify-content: center;
+    }
+    .planto-hero-trendyS-container-cover{
+        width: 54%;
+        align-items: center;
+        height: 60%;
+        margin-right: auto;
+    }
+    .planto-hero-trendyS-container-info-title{
+        font-size: 2.0375em;
+    }
+    .planto-hero-trendyS-container-info-name{
+        font-size: 3em;
+    }
+    .planto-body-hero-reviews {
+        width: 49%;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+    .planto-review{
+        font-size: 1.7em;
+    }
+    .planto-reviews-profile-info-name{
+        font-size: 2em;
+    }
+
+}
+@media screen and (max-width: 800px){
+  .planto-review-text{
+    font-size: 1.6em;
+  }
+  .planto-rev-profile-name{
+    font-size: 2.1em;
+  }
+  .planto-body-review{
+    padding-bottom: 3.5em;
+    padding-top: 3.5em;
+  }
+  .planto-body-best-content-text{
+    font-size: 1.3em;
+  }
+  .planto-body-best-content-title{
+    font-size: 2em;
+  }
+  .planto-hero-trendyS-container {
+    height: 96%;
+  }
+  .planto-body-hero-trendyS{
+
+  }
+
+}
+@media screen and (max-width:780px){
+    .planto-card-content-container{
+        padding-left: 3.125em;
+        padding-right: 2.625em;
+    }
+    .planto-body-best-manipulation-rl{
+        width: 8em;
+    }
+    .planto-header-navigaton{
+        width: 29.0625em;
+    }
+    .planto-hero-trendyS-container{
+        height: 82%;
+    }
+    .planto-body-rew-cards-cotainer {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1em;
+    }
+    .planto-review-text{
+        font-size: 1.8em;
+    }
+    .planto-body-topSell-cards-cotainer{
+        grid-template-columns: 1fr;
+    }
+    .planto-body-topSell-card{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .planto-body-best-content-text:last-of-type{
+        display: none;
+    }
+    .planto-body-best-cotainer{
+        height: 34.4375em;
+    }
+    .planto-body-hero-reviews{
+        width: 60%;
+    }
+    .planto-card-content-container{
+        height: 90%;
+    }
+}
+@media (max-width:680px ) {
+        .planto-hero-trendyS-container {
+        height: 80%;
+        }
+        .planto-hero-trendyS-container-info-name{
+            font-size: 2.5em;
+        }
+}
+@media  (max-width: 650px){
+        .planto-body-best-content-container{
+            width: 55%;
+        }
+        .planto-hero-trendyS-container{
+            height: 77%;
+        }
+        .planto-hero-trendyS-container-info-name{
+            font-size: 2.5em;
+        }
+        .planto-hero-trendyS-container-info-title{
+            font-size: 2em;
+        }
+        .planto-body-topSell-card{
+            width: 80%;
+            height: 57.25em;
+        }
+        .planto-card-content-container{
+            height: 82%;
+            padding-left: 4.125em;
+            padding-right: 3.625em;
+        }
+        .planto-body-topSell-card-image{
+            width: 32.6875em;
+            height: 32.6875em;
+            top: -10%;
+        }
+
+}
+@media screen and (max-width:619px) {
+    .planto-body-hero-trendyS{
+        display: none;
+    }
+    .planto-body-hero{
+        grid-template-rows: 1fr 0.25fr 1fr 0.25fr;
+        grid-template-areas: 'breath breath breath breath'
+'. . . .'
+'reviews reviews reviews reviews'
+'. . . . ';
+    }
+}
+@media screen and (max-width:550px) {
+    .planto-body-hero-reviews{
+        width: 90%;
+    }
+    .planto-card-content-container{
+        height: 79%;
+    }
+    .planto-body-rew-cards-cotainer {
+    width: 100%;
+}
+.planto-body-best-img {
+           position: absolute;
+        left: -10px;
+        top: -17px;
+        width: 74%;
+        object-fit: contain;
+        height: 100%;
+        z-index: -2;
+        filter: blur(10px);
+}
+.planto-body-best-content-container{
+    width: 75%;
+}
+}
+@media screen and (max-width:500px){
+        .planto-card-content-container {
+            height: 74%;
+        }
+        .planto-body-topSell-card {
+    width: 98%;
+    height: 57.25em;
+}
+.planto-body-topSell-card-image{
+    height: 30.6875em;
+    width: 30.6875em;
+}
+h2{
+    font-size: 2.8em;
+}
+.planto-review-text{
+    font-size: 1.5em;
+}
+    .planto-body-review {
+        padding-top: 4.5em;
+    }
+}
+@media  (max-width:450px) {
+    .planto-body-main-content-container{
+        padding-left: 2.8125em;
+        padding-right: 1.8125em;
+    }
+    .planto-body-hero{
+        padding-left: 2.5625em;
+    }
+}
+@media  (max-width:400px) {
+    .planto-body-main-content-container{
+        padding-left: 2.8125em;
+        padding-right: 1.8125em;
+    }
+    .planto-body-hero{
+        padding-left: 2.5625em;
+    }
+    .planto-body-topSell-card-image {
+        height: 27.6875em;
+        width: 27.6875em;
+        top: -4%;
+    }
+    .planto-card-content-container{
+        padding-left: 3.125em;
+        padding-right: 2.625em;
+    }
+    .planto-body-best-content-container{
+        width: 90%;
+        align-items: center;
+        padding-right: 2.6875em;
+        padding-left: 2.6875em;
+    }
+    .planto-body-review{
+        padding-left: 1.625em;
+        padding-right: 1.375em;
+        padding-bottom: 4.5em;
+    }
+    h2{
+        font-size: 2em;
+    }
+}
+

@@ -18,6 +18,15 @@
   font-family: "Inter SiemBold";
   src: url(/src/fonts/static/Inter_18pt-SemiBold.ttf);
 }
+@font-face {
+  font-family: "Inter Bold";
+  src: url(/src/fonts/static/Inter_18pt-Bold.ttf);
+}
+@font-face {
+  font-family: "Inter ExtraBold";
+  src: url(/src/fonts/static/Inter_18pt-ExtraBold.ttf);
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -44,9 +53,19 @@ h3{
   font-size: 2.375em;
   margin: 0px;
 }
+h4{
+    font-family: "Inter ExtraBold";
+    font-size: 1.75em;
+    margin-top: 0px;
+}
 p{
   margin: 0px;
 }
+input:active, input:hover, input:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
 @media screen and (min-width: 1900px){
   html{
     font-size: 18px;
