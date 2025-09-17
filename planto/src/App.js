@@ -109,6 +109,12 @@ class App extends React.Component{
   closeSecondModal() {
     this.setState({ isSecondModalOpen: false });
   }
+  scrollFunctionPage(scrollEl){
+        if (scrollEl) {
+             console.log(scrollEl)
+        scrollEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+  }
   render(){
       return (
     <div className="App-planto">
